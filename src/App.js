@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+// import "./app.css";
 import uuid from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+
 class App extends Component {
   state = {
     items: [],
@@ -55,8 +57,10 @@ class App extends Component {
     return (
       <div className="container">
         <div className="row">
+          
           <div className="col-10 mx-auto col-md-8 mt-5">
-            <h3 className="text-capitalize text-center">todo input</h3>
+            <h2 className="text-center add-task">ADD YOUR TO DO TASK</h2>
+            
             <TodoInput
               item={this.state.item}
               handleChange={this.handleChange}
